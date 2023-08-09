@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Irei abrir nessa página várias imagens, de acordo com seu tamanho</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <!--sempre colocar a maior imagem primeira, e depois ir colocando as tags.-->
+    <h1>Reproduzindo aúdio</h1>
+    <p>Vou inserir uma música na minha página</p>
+    <audio src="midia/rap.mp3" controls autoplay></audio>
+    <!--Jeito mais fácil-->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/rap.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Dessa maneira é mais detalhada, porém mais explicativa. Caso o navegador não leia MP3 é necessário converter, utilizando os mesmo código, porém com os arquivos convertidos, por exemplo: rap.ogg ou rap.wav. no type, repete o nome do ao qual o arquiivo foi convertido. Loop é para reiniciar o aúdio após su término-->
+</body>
+</html>

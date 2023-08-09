@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            margin: 5px;
+        }
+
+        header {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        main {
+            background-color: rgb(201, 187, 187);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        article > h2{
+             border-radius: 5px;
+             font-family:'Times New Roman', Times, serif ;
+             background-color: beige;
+             margin: 5px;
+             padding: 5px;
+             box-shadow: 1px 1px 8px black;
+        }
+
+        #noticias {
+            background-color: rgb(243, 118, 118);
+            padding: 5px;
+            margin: 0;
+            text-align: center;
+            box-shadow: 1px 1px 8px black;
+        }
+
+        nav {
+            background-color: rgb(204, 81, 81);
+            margin: 5px 10px;
+        }
+        
+        nav > a {
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        nav > a:hover {
+            text-decoration: dashed;
+            text-align: right;
+        }
+
+        p > a {
+            color: red;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+           
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>São Paulo F.C.</h1>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Lesões preocupam Dorival Jr</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ea, perferendis at voluptas eligendi obcaecati cumque vel corrupti rem incidunt dicta blanditiis officiis dolore placeat. Officiis odit id eius laudantium. <a href="http://">Veja materia completa</a></p>
+
+                <h2>Pato reestreia pelo SP novamente</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, provident amet! Libero eos dicta repellat ducimus aperiam reiciendis excepturi nulla. Dignissimos, doloremque quae quasi voluptatum consequatur voluptas modi vel perspiciatis. <a href="http://">Veja materia completa</a></p>
+
+                <h2>Calleri mira joga da volta contra Palmeiras</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo ut magnam quo accusantium eligendi consectetur fuga accusamus blanditiis voluptatem. Eaque maxime aspernatur qui reiciendis explicabo quos laudantium hic aliquid! <a href="http://">Veja materia completa</a></p>
+            </article>
+        </section>
+        <section id="noticias">
+            <h2>Outras notícias</h2>
+            <nav>
+                <a href="http://">LINK</a>
+                <a href="http://">LINK</a>
+                <a href="http://">LINK</a>
+                <a href="http://">LINK</a>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Arthur Nogueira</p>
+    </footer>
+</body>
+</html>

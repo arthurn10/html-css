@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        div > p {
+            background-color: greenyellow;
+            display: none;
+            width: 200px;
+        }
+        div:hover{
+            background-color: green;
+            width: 200px;
+        }
+        div:hover > p {
+            display: block;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Iniciando o aprendizado sobre Hover</h1>
+    <p>Paase o mouse sobre o texto abaixo:</p>
+    <div>
+        O palmeiras não tem...
+        <p>MUNDIAL</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

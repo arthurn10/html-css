@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:#ccf6d7;
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(to bottom,#9DF5CD, #74B598,#4B7562);
+    margin: 0%;
+    padding: 10px;
+}
+
+header > h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: android;
+    padding: 20px;
+}
+
+header > p {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+nav {
+    background-color: #406655;  
+    padding: 10px;
+
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: #74B598;
+}
+
+@font-face {
+    font-family: android;
+    src: url("../fontes/IDroid.otf") format("opentype");
+}
+
+main {            
+    margin: auto;
+    padding: 10px;
+    padding-top: 0;
+    background-color: white;
+    max-width: 1000px ;
+}
+
+
+article > h2 {
+    font-family: android;
+    padding-top: 10px;
+    color: #4B7562;
+
+}
+article > h1 {
+    background-color: #5b8f78;
+    font-family: android;
+}
+
+article > p {
+    margin: 10px;
+}
+
+div.video {
+    background-color: #ffffff;
+    margin: 0 px -10px 20px -10px;
+    padding: 10px;
+    padding-bottom: 56%;
+    position: relative;
+
+}
+
+div.video > iframe {
+    position:absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+}
+
+aside {
+    background-color: #9fc5b4;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+aside > h1 {
+    background-color: #5b8f78;
+    padding: 5px ;
+    margin: -5px -5px 0px -5px;
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+aside > p {
+    padding: 5px;
+    margin: 5px;
+    color: black;
+    text-align: center;
+}
+
+aside > ul {
+    color: black;
+    text-align: left ;
+    list-style-position: inside;
+    columns: 2;
+}
+
+article > picture {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin: 0;
+    padding: o;
+    background-color: #5b8f78;
+}
+footer > p {
+    text-align: center;
+    font-size: 30;
+    color: rgb(255, 255, 255);
+    
+}
