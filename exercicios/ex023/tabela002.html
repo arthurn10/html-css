@@ -7,7 +7,7 @@
 
     <style>
         table {
-            width: 300px;
+            width: 400px;
             border: 1px solid black;
             border-collapse: collapse;
         }
@@ -19,8 +19,26 @@
             padding: 5px;
         }
 
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(166, 180, 195);
+
+            /* para efeito zebrado na tabela usa esse comando 
+            o 2n significa em qual linha é para mudar de cor 2n por ex é na segunda linha a cada duas. Pode usar tbm ODD no lugar do N, ODD significa as linhas impares ou EVEN que são as linhas pares */
+
+        }
+
+        /* para deixar o cabeçalho da tabela fixo usa posição relativa no thead e faz o comando abaixo*/
+
         thead {
             background-color: lightgray;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
+
         }
 
         th {
@@ -51,6 +69,8 @@
             <tr>
                 <th> Clubes </th>
                 <th> Títulos</th>
+                <th> Libertadores</th>
+                <th> Mundial</th>
             </tr>
         </thead>
             
@@ -58,32 +78,64 @@
             <tr>
                 <td> São Paulo</td>
                 <td> 12 </td>
+                <td>3</td>
+                <td>3</td>
             </tr>
             
             <tr>
                 <td> Santos </td>
                 <td> 8</td>
+                <td>3</td>
+                <td>2</td>
             </tr>
 
             <tr>
                 <td> Grêmio</td>
                 <td>4</td>
+                <td>3</td>
+                <td>1</td>
             </tr>
 
             <tr>
                 <td>Internacional</td>
                 <td>3</td>
+                <td>2</td>
+                <td>1</td>
             </tr>
 
             <tr>
                 <td>Corinthians</td>
                 <td>3</td>
+                <td>1</td>
+                <td>2*</td>
             </tr>
 
             <tr>
                 <td>Flamengo</td>
                 <td>3</td>
+                <td>3</td>
+                <td>1</td>
             </tr>
+            <tr>
+                <td>Palmeiras</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Botafogo</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Fluminense</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+
+
 
         </tbody>
         
@@ -91,10 +143,16 @@
             <tr>
                 <th> TOTAL</th>
                 <td> <strong>33</strong> </td>
+                <td><strong>18</strong></td>
+                <td><strong>10</strong></td>
             </tr>
 
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam esse qui earum dolorum est vel animi sunt illum sequi et ducimus minima assumenda, reprehenderit rem nemo architecto quia nostrum quo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id totam iure atque. Recusandae temporibus labore facere. Fugiat repellat sint corporis harum quisquam nihil. Eius corporis accusantium, soluta dicta reprehenderit autem?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui facere cum voluptatibus deserunt quod, eligendi, at minus nihil quo repudiandae optio debitis doloribus sed consequatur quam beatae, sint ipsam eveniet?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, sit dolor facilis nostrum nulla magni suscipit quis amet asperiores numquam magnam perferendis facere fuga delectus enim at obcaecati voluptas perspiciatis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis dignissimos rerum. Explicabo ducimus animi quo magni minima dolor officiis laborum ut? Accusantium velit veritatis, quam cupiditate enim veniam animi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus neque quae quos exercitationem distinctio et illo fugit. Eum culpa, rem recusandae corrupti dolorum, veritatis vero, laudantium sit et fuga cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nemo dicta expedita, perferendis aperiam sapiente fugiat quasi soluta eaque consequuntur excepturi itaque. Nobis architecto illum odio facilis consectetur nesciunt perferendis!Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, totam esse fuga aliquid, labore architecto repellendus laboriosam tenetur cupiditate qui, nisi voluptatibus nostrum quidem quibusdam et hic incidunt. Amet, animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequatur, itaque fuga, dolorum facilis magnam, repellat dolores asperiores perferendis accusantium eaque. Quia accusantium deserunt eos hic aspernatur quis cupiditate illum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi maxime quaerat aliquid officiis alias voluptates deserunt adipisci veritatis atque minima sint, facilis odit, necessitatibus labore cum, magni temporibus voluptatibus consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore suscipit, nostrum iure iste tempora unde sapiente natus cum voluptate quibusdam consequuntur, eos pariatur blanditiis perspiciatis minus atque repellendus inventore.
+    </p>
 </body>
 </html>
