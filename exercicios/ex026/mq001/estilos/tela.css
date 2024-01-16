@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+header > h1 {
+    text-align: center;
+    background-color: rgb(169, 175, 177) ;
+}
+
+menu ul {
+    background-color: rgb(161, 174, 179);
+}
+
+menu li {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(121, 124, 129);
+    color: white;
+}
+
+article {
+    text-align: center;
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+
+article > h2{
+    padding: 8px;
+}
+
+
+
+/* código para tela */
