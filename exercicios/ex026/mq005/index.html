@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site Responsivo</h1>
 
@@ -31,7 +31,7 @@
 
     <main>
         <article>
-            <h2>Testando Media Queries</h2>
+            <h2>Testando Mdia Queries</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio facere culpa expedita enim voluptate earum est deserunt, vitae libero minus alias consectetur quidem ex cum non quia eius excepturi.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quo recusandae itaque harum dolore sit, voluptatum porro laborum asperiores architecto a cumque repellat corporis tempora nemo eligendi perferendis cum dicta!
@@ -51,6 +51,16 @@
     </main>
 
     <script>
+        
+        function mudouTamanho () {
+            if (window.innerWidth >= 769) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
         function clickMenu () {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
