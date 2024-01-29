@@ -45,11 +45,6 @@ TV (grandes telas) – 1201px
         
         menu > ul > li  {
             display: inline-block;
-            text-decoration: none;
-            color: rgb(246, 242, 242);
-            padding: 0px;
-            text-align: center;
-            margin: 0;
         }
 
         main {
